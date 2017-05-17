@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/board1"
+    android:id="@+id/search_layout"
+    >
+
+    <TextView
+        android:text="Search by Ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/back"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_above="@+id/linearLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="IngredientHere"
+                android:ems="10"
+                android:id="@+id/searchBlockInput" />
+
+            <Button
+                android:text="Add"
+                android:layout_height="wrap_content"
+                android:id="@+id/addIngredient"
+                android:background="@drawable/buttonback"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.29"
+                android:layout_width="60dp" />
+
+            <Button
+                android:text="Exclude"
+                android:layout_height="wrap_content"
+                android:id="@+id/exclusionAdd"
+                android:background="@drawable/buttonback"
+                android:layout_weight="0.27"
+                android:layout_width="60dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Items To Exclude:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notNotable"
+                    android:textColor="@android:color/background_dark" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ExclusionBlocks" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Items To Search For:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Irrelevant"
+                android:textColor="@android:color/background_dark" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:id="@+id/listOfSearchTerms" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/whatToSearch"
+            android:layout_weight="0.87" />
+
+        <Button
+            android:text="click to Change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/change"
+            android:layout_weight="0.13"
+            android:background="@drawable/buttonback" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Enter Type/Category"
+                android:ems="10"
+                android:id="@+id/valueForType" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelSearch"
+                android:layout_alignBaseline="@+id/SearchHelp"
+                android:layout_alignBottom="@+id/SearchHelp"
+                android:layout_alignRight="@+id/searchByType"
+                android:layout_alignEnd="@+id/searchByType"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonback"/>
+
+            <RadioButton
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/searchHelp"
+                android:layout_weight="1"
+                android:button="@android:drawable/presence_online" />
+
+            <Button
+                android:text="Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DoSearch"
+                android:layout_marginBottom="29dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/SearchHelp"
+                android:layout_toStartOf="@+id/SearchHelp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonback"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="110dp"
+        android:weightSum="1"
+        android:background="@drawable/border"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ab"
+            android:id="@+id/imageView7"
+            android:layout_weight="0.50" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_weight="0.50">
+
+            <TextView
+                android:text="The Title"
+                android:layout_width="match_parent"
+                android:id="@+id/title"
+                android:layout_height="40dp"
+                android:layout_weight="0.46"
+                android:textStyle="normal|bold|italic"
+                android:textSize="30sp" />
+
+            <TextView
+                android:text="The Description"
+                android:layout_width="match_parent"
+                android:id="@+id/description"
+                android:layout_height="30dp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/Category"
+                android:layout_height="20dp"
+                android:text="The Category" />
+
+            <TextView
+                android:text="The Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Type" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EditRecipe"
+                android:layout_weight="1.08"
+                android:background="@android:drawable/ic_menu_edit" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DeleteRecipe"
+                android:background="@android:drawable/ic_delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

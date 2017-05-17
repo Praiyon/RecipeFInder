@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="\nYou can edit the fields of your \n recipe by taping on each field \n and adding your recipe details.\n\nCalories, Carbs, Protein, Fat must be entered using an integer.\n\nAn example of Category is'Italian'. An example of Type is 'Entree'.\n"
+        android:gravity="center"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+
+        android:background="@drawable/circle"
+        android:layout_weight="0.80"
+        android:textColor="@android:color/background_dark" />
+
+    <ImageButton
+        android:layout_width="86dp"
+        android:layout_height="110dp"
+        android:layout_gravity="right"
+        android:background="@drawable/nicelookingchef"
+        android:id="@+id/imageButton"
+        android:layout_weight="0.15" />
+</LinearLayout>
+

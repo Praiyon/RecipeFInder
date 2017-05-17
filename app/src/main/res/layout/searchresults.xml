@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/board1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backToList"
+            android:layout_weight="1"
+            android:background="@drawable/buttonback"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:text="New Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchButton"
+            android:layout_weight="1"
+            android:background="@drawable/buttonback"
+            android:layout_margin="10dp" />
+
+        <RadioButton
+            android:text="Help"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/helpButton"
+            android:layout_weight="1"
+            android:button="@android:drawable/presence_online"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchResults"
+        android:elevation="1dp" />
+</LinearLayout>
