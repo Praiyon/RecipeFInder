@@ -14,9 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Arsham on 11/29/2016.
- */
+
 
 public class RecipeSearchAdapter extends ArrayAdapter<RecipeItem> {
     private ArrayList<RecipeItem> listOfItems;

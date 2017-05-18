@@ -4,9 +4,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Arsham on 11/25/2016.
- */
+
 
 public class RecipeItem {
 

@@ -24,9 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-/**
- * Created by Arsham on 11/27/2016.
- */
+
 
 public class RecipeSearch extends Activity {
 

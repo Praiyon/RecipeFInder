@@ -2,9 +2,7 @@ package nothing.recipefinder;
 
 import java.util.ArrayList;
 
-/**
- * Created by Arsham on 11/26/2016.
- */
+
 public class RecipeFinderData {
     private static RecipeFinderData ourInstance = new RecipeFinderData();
     private ArrayList<RecipeItem> listOfAllRecipes, listForSearching;

@@ -12,9 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Arsham on 11/27/2016.
- */
+
 
 public class SearchEntryAdapter extends ArrayAdapter<ArrayList<String>> {
     ArrayList<ArrayList<String>> listOfEntries;
